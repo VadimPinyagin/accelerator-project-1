@@ -7,5 +7,10 @@
 @import "common/global.scss";
 @import "common/base.scss";
 @import "common/fonts.scss";
+
+// Blocks
+@import "blocks/container.scss";
 @import "blocks/page.scss";
 @import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/nav-menu.scss";

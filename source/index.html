@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" data-validate="html">
+<html class="page" lang="ru" data-validate="html">
 <!-- <img src="/__spritemap#sprite-map-view" alt="Это спрайт" width="25" height="25"> -->
   <head>
     <meta charset="UTF-8">
@@ -9,25 +9,29 @@
     <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font" type="font/woff2">
     <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2">
   </head>
-  <body class="page-body">
-    <header class="page-body__header header">
-      <nav class="header__nav nav">
-        <img class="nav__logo" src="img/logotype.svg" width="142" height="42" alt="Lifetour. Организация походов в горы.">
-        <a class="nav__contact" href="tel:88000000000">8 800 000-00-00</a>
-        <button class="nav__btn-burger" type="button">
-          <span class="visually-hidden">Открыть/закрыть меню</span>
-        </button>
-        <ul class="nav__main-menu nav-menu nav-menu--is-close">
-          <li class="nav-menu__item"><a class="nav-menu__link" href="#">Туры</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__link" href="#">Обучение</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__link" href="#">Доставка</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__link" href="#">О&nbsp;нас</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__link" href="#">Отзывы</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__link" href="#">Фотографии</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__link" href="#">Контакты</a></li>
-        </ul>
-      </nav>
+  <body class="page__body">
+    <header class="header">
+        <nav class="header__nav nav nav--menu-is-open">
+          <img class="nav__logo" src="img/logotype.svg" width="142" height="42" alt="Lifetour. Организация походов в горы.">
+          <a class="nav__contact" href="tel:88000000000">8 800 000-00-00</a>
+          <button class="nav__btn-burger" type="button">
+            <span class="visually-hidden">Открыть/закрыть меню</span>
+          </button>
+          <ul class="nav__main-menu nav-menu">
+            <li class="nav-menu__item"><a class="nav-menu__link" href="#">Туры</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="#">Обучение</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="#">О&nbsp;нас</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="#">Отзывы</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="#">Фотографии</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
     </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container hero__container"></div>
+      </section>
+    </main>
     <script type="module" src="js/main.js"></script>
   </body>
 </html>
