@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
-
+<!-- <img src="/__spritemap#sprite-map-view" alt="Это спрайт" width="25" height="25"> -->
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,22 +9,25 @@
     <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font" type="font/woff2">
     <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2">
   </head>
-
   <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-map-view" alt="Это спрайт" width="25" height="25">
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="header">header</div>
-    <div data-test="hero">hero</div>
-    <div data-test="tours">tours</div>
-    <div data-test="training">training</div>
-    <div data-test="about">about</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="adv">adv</div>
-    <div data-test="gallery">gallery</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
+    <header class="page-body__header header">
+      <nav class="header__nav nav">
+        <img class="nav__logo" src="img/logotype.svg" width="142" height="42" alt="Lifetour. Организация походов в горы.">
+        <a class="nav__contact" href="tel:88000000000">8 800 000-00-00</a>
+        <button class="nav__btn-burger" type="button">
+          <span class="visually-hidden">Открыть/закрыть меню</span>
+        </button>
+        <ul class="nav__main-menu nav-menu nav-menu--is-close">
+          <li class="nav-menu__item"><a class="nav-menu__link" href="#">Туры</a></li>
+          <li class="nav-menu__item"><a class="nav-menu__link" href="#">Обучение</a></li>
+          <li class="nav-menu__item"><a class="nav-menu__link" href="#">Доставка</a></li>
+          <li class="nav-menu__item"><a class="nav-menu__link" href="#">О&nbsp;нас</a></li>
+          <li class="nav-menu__item"><a class="nav-menu__link" href="#">Отзывы</a></li>
+          <li class="nav-menu__item"><a class="nav-menu__link" href="#">Фотографии</a></li>
+          <li class="nav-menu__item"><a class="nav-menu__link" href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
     <script type="module" src="js/main.js"></script>
   </body>
-
 </html>

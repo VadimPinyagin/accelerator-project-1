@@ -3,5 +3,9 @@
 
 @import "vendor/normalize";
 @import "common/vareables.scss";
+@import "common/mixins.scss";
+@import "common/global.scss";
+@import "common/base.scss";
 @import "common/fonts.scss";
 @import "blocks/page.scss";
+@import "blocks/header.scss";
