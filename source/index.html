@@ -11,7 +11,7 @@
   </head>
   <body class="page__body">
     <header class="header">
-        <nav class="header__nav nav nav--menu-is-open">
+        <nav class="header__nav nav nav--menu-is-close">
           <img class="nav__logo" src="img/logotype.svg" width="142" height="42" alt="Lifetour. Организация походов в горы.">
           <a class="nav__contact" href="tel:88000000000">8 800 000-00-00</a>
           <button class="nav__btn-burger" type="button">
@@ -30,8 +30,16 @@
         </nav>
     </header>
     <main class="main">
-      <section class="hero">
-        <div class="container hero__container"></div>
+      <h1 class="visually-hidden">Туры Кавказа. Поездки, походы, восхождения.</h1>
+      <section class="swiper">
+            <div class="swiper__wrapper">
+              <div class="swiper__slide swiper__slide--1"></div>
+              <div class="swiper__slide swiper__slide--2"></div>
+              <div class="swiper__slide swiper__slide--3"></div>
+            </div>
+            <div class="swiper__pagination"></div>
+            <div class="swiper__button-prev"></div>
+            <div class="swiper__button-next"></div>
       </section>
     </main>
     <script type="module" src="js/main.js"></script>

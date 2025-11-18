@@ -32,6 +32,10 @@
   grid-template-rows: repeat(2, auto);
   grid-template-columns: repeat(2, auto);
 
+  .nav__menu-container {
+    display: none;
+  }
+
   .nav__main-menu {
     display: none;
   }
@@ -61,15 +65,15 @@
 }
 
 .nav--menu-is-open {
-  grid-template-rows: repeat(3, auto);
-  grid-template-columns: repeat(2, auto);
 
   .nav__menu-container {
     position: absolute;
+    z-index: 1;
     display: flex;
-    width: 100%;
-    top: 103px;
     justify-content: center;
+    width: 100%;
+    top: 102px;
+    left: 0;
     background-color: var(--dark-blue, #0266c1);
   }
 
@@ -77,32 +81,27 @@
     display: flex;
     row-gap: 16px;
     flex-direction: column;
-    padding-block-start: 9px;
-    padding-block-end: 50px;
-    padding-inline-start: 15px;
+    padding-block-start: 10px;
+    padding-block-end: 47px;
     width: 290px;
   }
 
   .nav__btn-burger{
 
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 26px;
-      height: 2px;
-      background-color: transparent;
-      box-shadow: 0 8px 0 0 var(--base-white, #ffffff), 0 -9px 0 0 var(--base-white, #ffffff);
-    }
-
+    &::before,
     &::after {
       content: "";
       display: block;
       position: absolute;
-      width: 17px;
+      width: 30px;
       height: 2px;
-      top: 12px;
       background-color: var(--base-white, #ffffff);
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
     }
   }
 }
