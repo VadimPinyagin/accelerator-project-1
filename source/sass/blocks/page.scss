@@ -16,3 +16,8 @@
   flex-direction: column;
   position: relative;
 }
+
+.page__body.lock {
+  overflow: hidden;
+  height: 100%;
+}
