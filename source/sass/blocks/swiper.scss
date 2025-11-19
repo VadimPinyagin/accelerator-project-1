@@ -1,5 +1,6 @@
-.swiper__wrapper {
-  width: 100%;
+.swiper {
+  width: 100vw;
+  min-width: 320px;
 }
 
 .swiper__slide {
