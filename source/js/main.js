@@ -1,7 +1,10 @@
 // https://swiperjs.com/get-started#installation
 import {mainNavOpenClose} from './moblie-nav.js';
 import Swiper from 'swiper';
+import {Navigation, Pagination} from "swiper/modules";
 import 'swiper/css';
+import 'swiper/css/pagination';
+
 
 new Swiper('.swiper', {
   // Опции Swiper
@@ -14,6 +17,7 @@ new Swiper('.swiper', {
     nextEl: '.swiper__button-next',
     prevEl: '.swiper__button-prev',
   },
+  modules: [Navigation, Pagination],
 });
 
 mainNavOpenClose();
