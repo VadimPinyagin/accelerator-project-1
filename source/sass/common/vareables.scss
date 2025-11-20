@@ -5,8 +5,10 @@ $desktop-width: 1440px;
   --dark-gray: #2d383f;
   --base-white: #ffffff;
   --dark-blue: #0266c1;
+  --disabled: #999999;
 
   // Переопределённые свойства для свайпера
   --swiper-pagination-bottom: 40px;
+  --swiper-pagination-top: auto;
   --swiper-pagination-bullet-inactive-opacity: 1;
 }

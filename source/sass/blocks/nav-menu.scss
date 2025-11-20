@@ -5,9 +5,39 @@
 
 .nav-menu__link {
   @include link-reset;
+  position: relative;
   font-weight: 700;
   line-height: 14px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--base-white, #ffffff);
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 400;
+    text-transform: none;
+  }
+}
+
+.nav-menu__link:hover {
+  box-shadow: 0 1px 0 0 #ffffff;
+}
+
+.nav-menu__link:focus,
+.nav-menu__link:focus-visible {
+  box-shadow: 0 0 0 1px #ffffff;
+}
+
+.nav-menu__link:active {
+  box-shadow: none;
+  color: var(--dark-gray, #2d383f);
+}
+
+.nav-menu__link.disabled {
+  color: var(--disabled, #999999);
+  pointer-events: none;
 }
