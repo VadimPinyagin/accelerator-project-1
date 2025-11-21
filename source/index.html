@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="page" lang="ru" data-validate="html">
-<!-- <img src="/__spritemap#sprite-map-view" alt="Это спрайт" width="25" height="25"> -->
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +9,7 @@
     <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2">
   </head>
   <body class="page__body">
-    <header class="header">
+    <header class="header" data-test="header">
         <nav class="header__nav nav nav--menu-is-close">
           <button class="nav__btn-burger" type="button">
             <span class="visually-hidden">Открыть/закрыть меню</span>
@@ -33,7 +32,7 @@
     </header>
     <main class="main">
       <h1 class="visually-hidden">Горные туры. Поездки, походы, восхождения.</h1>
-      <section class="swiper">
+      <section class="swiper" data-test="hero">
         <div class="swiper__wrapper swiper-wrapper">
           <div class="swiper__slide swiper__slide--1 swiper-slide">
             <div class="swiper__slide-content">
@@ -70,8 +69,11 @@
           </div>
         </div>
         <div class="swiper__pagination swiper-pagination"></div>
-        <div class="swiper__button-prev swiper-button-prev"></div>
-        <div class="swiper__button-next swiper-button-next"></div>
+      </section>
+      <section class="tours" data-test="tours">
+        <div class="container">
+          <h2 class="tours__title">Ближайшие туры</h2>
+        </div>
       </section>
     </main>
     <script type="module" src="js/main.js"></script>
