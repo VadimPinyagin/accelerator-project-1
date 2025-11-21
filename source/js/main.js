@@ -1,24 +1,26 @@
-// https://swiperjs.com/get-started#installation
 import {mainNavOpenClose} from './moblie-nav.js';
-import Swiper from 'swiper';
-import {Pagination} from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
+import {initSwiperHero} from './swiper-hero.js'
+// import Swiper from 'swiper';
+// import {Pagination} from 'swiper/modules';
+// import 'swiper/css';
+// import 'swiper/css/pagination';
 
 
-new Swiper('.swiper', {
-  // Опции Swiper
-  loop: true, // бесконечный цикл
-  modules: [Pagination],
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true,
-    pageUpDown: true,
-  },
-});
+
+
+// new Swiper('.swiper', {
+//   loop: true,
+//   modules: [Pagination],
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//   },
+//   keyboard: {
+//     enabled: true,
+//     onlyInViewport: true,
+//     pageUpDown: true,
+//   },
+// });
 
 mainNavOpenClose();
+initSwiperHero();

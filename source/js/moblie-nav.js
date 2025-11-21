@@ -2,7 +2,6 @@ const body = document.querySelector('.page__body');
 const btnBurger = body.querySelector('.nav__btn-burger');
 const mainNav = body.querySelector('.nav');
 const menuItems = mainNav.querySelectorAll('.nav-menu__item');
-// mainNav.classList.add('main-nav--is-close');
 
 export function mainNavOpenClose() {
   if (btnBurger) {
