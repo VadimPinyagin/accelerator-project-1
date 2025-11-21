@@ -68,6 +68,26 @@
   }
 }
 
+.nav__contact:hover {
+  color: rgb(255, 255, 255, 0.5);
+}
+
+.nav__contact:focus,
+.nav__contact:focus-visible {
+  outline: none;
+  color: var(--dark-gray, #2d383f);
+}
+
+.nav__contact:active {
+  box-shadow: none;
+  color: var(--nuvy-blue,#1c3374);
+}
+
+.nav__contact.disabled {
+  color: var(--disabled, #999999);
+  pointer-events: none;
+}
+
 .nav--menu-is-close {
   grid-template-rows: repeat(2, auto);
   grid-template-columns: repeat(2, auto);

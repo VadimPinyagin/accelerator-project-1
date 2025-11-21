@@ -9,15 +9,16 @@ import 'swiper/css/pagination';
 new Swiper('.swiper', {
   // Опции Swiper
   loop: true, // бесконечный цикл
+  modules: [Pagination],
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
-  navigation: {
-    nextEl: '.swiper__button-next',
-    prevEl: '.swiper__button-prev',
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
   },
-  modules: [Navigation, Pagination],
 });
 
 mainNavOpenClose();
