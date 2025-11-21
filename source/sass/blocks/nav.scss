@@ -80,7 +80,7 @@
 
 .nav__contact:active {
   box-shadow: none;
-  color: var(--nuvy-blue,#1c3374);
+  color: var(--nuvy-blue, #1c3374);
 }
 
 .nav__contact.disabled {
@@ -107,7 +107,6 @@
 }
 
 .nav--menu-is-close .nav__main-menu {
-
   @media (min-width: $desktop-width) {
     display: flex;
     column-gap: 26px;

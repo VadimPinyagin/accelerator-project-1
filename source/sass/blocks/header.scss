@@ -1,16 +1,16 @@
 .header {
   background-color: var(--dark-blue, #0266c1);
   padding-block-start: 15px;
-  padding-block-end: 13px;
+  padding-block-end: 14px;
+  margin-block-end: -1px;
 
   @media (min-width: $tablet-width) {
     padding-block-start: 20px;
-    padding-block-end: 15px;
+    padding-block-end: 16px;
   }
 
   @media (min-width: $desktop-width) {
     padding-block-start: 41px;
-    padding-block-end: 38px;
-    margin-block-end: -1px;
+    padding-block-end: 39px;
   }
 }
