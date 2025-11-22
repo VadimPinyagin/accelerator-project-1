@@ -1,12 +1,10 @@
 .nav-menu {
   @include list-reset;
-
   z-index: 3;
 }
 
 .nav-menu__link {
   @include link-reset;
-
   position: relative;
   font-weight: 700;
   line-height: 14px;
