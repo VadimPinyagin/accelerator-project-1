@@ -1,7 +1,7 @@
-const body = document.querySelector('.page__body');
-const btnBurger = body.querySelector('.nav__btn-burger');
-const mainNav = body.querySelector('.nav');
-const menuItems = mainNav.querySelectorAll('.nav-menu__item');
+import {BODY} from './constants.js'
+export const btnBurger = BODY.querySelector('.nav__btn-burger');
+export const mainNav = BODY.querySelector('.nav');
+export const menuItems = mainNav.querySelectorAll('.nav-menu__item');
 
 export function mainNavOpenClose() {
   if (btnBurger) {
@@ -10,9 +10,9 @@ export function mainNavOpenClose() {
       mainNav.classList.toggle('nav--menu-is-close');
 
       if (mainNav.classList.contains('nav--menu-is-open')) {
-        body.classList.add('lock');
+        BODY.classList.add('lock');
       } else {
-        body.classList.remove('lock');
+        BODY.classList.remove('lock');
       }
     });
   }
@@ -21,7 +21,7 @@ export function mainNavOpenClose() {
     item.addEventListener('click', () => {
       mainNav.classList.remove('nav--menu-is-open');
       mainNav.classList.add('nav--menu-is-close');
-      body.classList.remove('lock');
+      BODY.classList.remove('lock');
     });
   });
 }
