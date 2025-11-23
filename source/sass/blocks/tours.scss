@@ -1,3 +1,19 @@
+.tours {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 141px;
+    height: 595px;
+    right: 0;
+    top: 10px;
+    background-image: image-set("../img/clouds-background-mobile-1@1x.webp" 1x, " ../img/clouds-background-mobile-1@2x.webp" 2x, "../img/clouds-background-mobile-1@1x.png" 1x, "../img/clouds-background-mobile-1@2x.png" 2x);
+    background-size: 100%;
+  }
+}
+
 .tours__list {
   @include list-reset;
 
