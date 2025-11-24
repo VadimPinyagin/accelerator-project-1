@@ -1,0 +1,168 @@
+
+.tours-card {
+  height: 416px;
+  display: flex;
+  align-items: end;
+}
+
+.tours-card:nth-child(1) {
+  background-image: image-set("../img/card-tour-elbrus-mobile@1x.webp" 1x, " ../img/card-tour-elbrus-mobile@2x.webp" 2x, "../img/card-tour-elbrus-mobile@1x.jpg" 1x, "../img/card-tour-elbrus-mobile@2x.jpg" 2x);
+}
+
+.tours-card:nth-child(2) {
+  background-image: image-set("../img/card-tour-belukha-mobile@1x.webp" 1x, " ../img/card-tour-belukha-mobile@2x.webp" 2x, "../img/card-tour-belukha-mobile@1x.jpg" 1x, "../img/card-tour-belukha-mobile@2x.jpg" 2x);
+}
+
+.tours-card:nth-child(3) {
+  background-image: image-set("../img/card-tour-fisht-mobile@1x.webp" 1x, " ../img/card-tour-fisht-mobile@2x.webp" 2x, "../img/card-tour-fisht-mobile@1x.jpg" 1x, "../img/card-tour-fisht-mobile@2x.jpg" 2x);
+}
+
+.tours-card:nth-child(4) {
+  background-image: image-set("../img/card-tour-manaraga-mobile@1x.webp" 1x, " ../img/card-tour-manaraga-mobile@2x.webp" 2x, "../img/card-tour-manaraga-mobile@1x.jpg" 1x, "../img/card-tour-manaraga-mobile@2x.jpg" 2x);
+}
+
+.tours-card__content {
+  padding-inline: 20px;
+  padding-block-end: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.tours-card__title {
+  margin: 0;
+  padding-block: 18px 30px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 26px;
+  grid-row: 3;
+  grid-column: 1/4;
+}
+
+.tours-card__info-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  row-gap: 12px;
+  grid-row: 1;
+  grid-column: 1 / 4;
+}
+
+.tours-card__region-container {
+  display: flex;
+}
+
+.tours-card__region {
+  display: flex;
+  align-items: center;
+  column-gap: 9px;
+  margin-block: 0;
+  margin-inline-end: 5px;
+  padding-block: 8px;
+  padding-inline:16px 13px;
+  background-color: var(--dark-blue, #0266c1);
+
+  &::before {
+    content: "";
+    display: block;
+    width: 9px;
+    height: 12px;
+    mask-image: url("/__spritemap#sprite-pin-view");
+    mask-repeat: no-repeat;
+    background-color: var(--base-white, #ffffff );
+  }
+}
+
+.tours-card__info-hours {
+  display: grid;
+  align-items: center;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, auto);
+}
+
+.tours-card__day,
+.tours-card__night {
+  grid-column: 3;
+  margin-inline-start: 0;
+}
+
+.tours-card__quantity {
+  grid-column: 2;
+  margin-inline-end: 4px;
+}
+
+.tours-card__info-hours:has(.tours-card__day) {
+  margin-inline-end: 15px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    mask-image: url("/__spritemap#sprite-sun-view");
+    mask-repeat: no-repeat;
+    background-color: var(--base-white, #ffffff );
+    margin-inline-end: 12px;
+  }
+}
+
+.tours-card__info-hours:has(.tours-card__night)::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  mask-image: url("/__spritemap#sprite-moon-view");
+  mask-repeat: no-repeat;
+  background-color: var(--base-white, #ffffff );
+  margin-inline-end: 12px;
+}
+
+.tours-card__details {
+  display: flex;
+  justify-content: space-between;
+  grid-row: 4;
+  grid-column: 1/4;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.tours-card__details-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  justify-content: space-between;
+}
+
+.tours-card__stars::before {
+  content: "";
+  display: block;
+  width: 84px;
+  height: 16px;
+}
+
+.tours-card__stars--3::before {
+  background-image: url("/__spritemap#sprite-stars-raiting-3-view");
+}
+
+.tours-card__stars--4::before {
+  background-image: url("/__spritemap#sprite-stars-raiting-4-view");
+}
+
+.tours-card__stars--5::before {
+  background-image: url("/__spritemap#sprite-stars-raiting-5-view");
+}
+
+.tours-card__stars,
+.tours-card__period,
+.tours-card__group {
+  margin-inline-start: 0;
+  height: auto;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 13px;
+  row-gap: 2px;
+}

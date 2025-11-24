@@ -40,8 +40,8 @@
               <p class="swiper__description">В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
               <a class="swiper__link" href="#">Смотреть тур</a>
               <div class="swiper__slide-details">
-                <span class="swiper__slide-period">6 дней/5 ночей</span>
-                <span class="swiper__slide-category">Высокая сложность</span>
+                <p class="swiper__slide-period">6 дней/5 ночей</p>
+                <p class="swiper__slide-category">Высокая сложность</p>
               </div>
             </div>
           </div>
@@ -51,8 +51,8 @@
               <p class="swiper__description">Незабываемое приключение, во время&nbsp;которого вы отправитесь в путешествие по одному&nbsp;из самых нетронутых уголков дикой природы в мире.</p>
               <a class="swiper__link" href="#">Смотреть тур</a>
               <div class="swiper__slide-details">
-                <span class="swiper__slide-period">9 дней/10 ночей</span>
-                <span class="swiper__slide-category">Средняя сложность</span>
+                <p class="swiper__slide-period">9 дней/10 ночей</p>
+                <p class="swiper__slide-category">Средняя сложность</p>
               </div>
             </div>
           </div>
@@ -62,8 +62,8 @@
               <p class="swiper__description">Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
               <a class="swiper__link" href="#">Смотреть тур</a>
               <div class="swiper__slide-details">
-                <span class="swiper__slide-period">8 дней/7 ночей</span>
-                <span class="swiper__slide-category">Лёгкая сложность</span>
+                <p class="swiper__slide-period">8 дней/7 ночей</p>
+                <p class="swiper__slide-category">Лёгкая сложность</p>
               </div>
             </div>
           </div>
@@ -72,95 +72,132 @@
       </section>
       <section class="tours" data-test="tours">
         <div class="container tours__cotnainer">
-          <div class="tours__title-container">
-            <h2 class="tours__title">Ближайшие туры</h2>
-            <span class="tours__title-duplicate" aria-hidden="true">Ближайшие туры</span>
-          </div>
-          <ul class="tours__list">
-            <li class="tours__list-card">
-              <div class="tours__list-card-content">
-                <h3 class="tours__list-card-title">Путешествие вокруг Эльбруса</h3>
-                <span class="tours__info-region tours__info-region--caucasus">Кавказ</span>
-                <span class="tours__info-day tours__info-day--caucasus">4 дня</span>
-                <span class="tours__info-night tours__info-night--caucasus">3 ночи</span>
-                <dl class="tours__details">
-                  <div class="tours__details-container">
-                    <dt class="tours__details-level">Сложность</dt>
-                    <dd class="tours__details-stars"></dd>
+          <h2 class="tours__title" data-duplicate="Ближайшие туры">Ближайшие туры</h2>
+          <ul class="tours__list tours-list">
+            <li class="tours-card tours-list__item">
+              <div class="tours-card__content">
+                <h3 class="tours-card__title">Путешествие вокруг Эльбруса</h3>
+                <div class="tours-card__info-wrapper">
+                  <p class="tours-card__region">Кавказ</p>
+                  <div class="tours-card__region-container">
+                    <dl class="tours-card__info-hours">
+                    <dt class="tours-card__quantity">4</dt>
+                    <dd class="tours-card__day">дня</dd>
+                  </dl>
+                  <dl class="tours-card__info-hours">
+                    <dt class="tours-card__quantity">3</dt>
+                    <dd class="tours-card__night">ночи</dd>
+                  </dl>
                   </div>
-                  <div class="tours__details-container">
-                    <dt class="tours__details-date">Дата набора</dt>
-                    <dd class="tours__details-period">12.06–19.06</dd>
+                </div>
+                <dl class="tours-card__details">
+                  <div class="tours-card__details-container">
+                    <dt class="tours-card__level">Сложность</dt>
+                    <dd class="tours-card__stars tours-card__stars--4"></dd>
                   </div>
-                  <div class="tours__details-container">
-                    <dt class="tours__details-size">Группа:</dt>
-                    <dd class="tours__details-group">до&nbsp;15&nbsp;чел.</dd>
+                  <div class="tours-card__details-container">
+                    <dt class="tours-card__date">Дата набора</dt>
+                    <dd class="tours-card__period">12.06–19.06</dd>
                   </div>
-                </dl>
-              </div>
-            </li>
-            <li class="tours__list-card">
-              <div class="tours__list-card-content">
-                <h3 class="tours__list-card-title">Путь к подножию Белухи</h3>
-                <span class="tours__info-region">Алтай</span>
-                <span class="tours__info-day">14 дня</span>
-                <span class="tours__info-night">13 ночи</span>
-                <dl class="tours__details">
-                  <div class="tours__details-container">
-                    <dt class="tours__details-level">Сложность</dt>
-                    <dd class="tours__details-stars"></dd>
-                  </div>
-                  <div class="tours__details-container">
-                    <dt class="tours__details-date">Дата набора</dt>
-                    <dd class="tours__details-period">14.06–23.06</dd>
-                  </div>
-                  <div class="tours__details-container">
-                    <dt class="tours__details-size">Группа:</dt>
-                    <dd class="tours__details-group">до&nbsp;25&nbsp;чел.</dd>
+                  <div class="tours-card__details-container">
+                    <dt class="tours-card__size">Группа:</dt>
+                    <dd class="tours-card__group">до&nbsp;15&nbsp;чел.</dd>
                   </div>
                 </dl>
               </div>
             </li>
-            <li class="tours__list-card">
-              <div class="tours__list-card-content">
-                <h3 class="tours__list-card-title">Через Фишт к Чёрному морю и обратно</h3>
-                  <span class="tours__info-region">Адыгея</span>
-                  <span class="tours__info-day">7 дней</span>
-                  <span class="tours__info-night">6 ночей</span>
-                <dl class="tours__details">
-                  <div class="tours__details-container">
-                    <dt class="tours__details-level">Сложность</dt>
-                    <dd class="tours__details-stars"></dd>
+             <li class="tours-card tours-list__item">
+              <div class="tours-card__content">
+                <h3 class="tours-card__title">Путь к подножию Белухи</h3>
+                <div class="tours-card__info-wrapper">
+                  <p class="tours-card__region">Алтай</p>
+                  <div class="tours-card__region-container">
+                    <dl class="tours-card__info-hours">
+                      <dt class="tours-card__quantity">14</dt>
+                      <dd class="tours-card__day">дня</dd>
+                    </dl>
+                    <dl class="tours-card__info-hours">
+                      <dt class="tours-card__quantity">13</dt>
+                      <dd class="tours-card__night">ночи</dd>
+                    </dl>
                   </div>
-                  <div class="tours__details-container">
-                    <dt class="tours__details-date">Дата набора</dt>
-                    <dd class="tours__details-period">15.07–19.07</dd>
+                </div>
+                <dl class="tours-card__details">
+                  <div class="tours-card__details-container">
+                    <dt class="tours-card__level">Сложность</dt>
+                    <dd class="tours-card__stars tours-card__stars--3"></dd>
                   </div>
-                  <div class="tours__details-container">
-                    <dt class="tours__details-size">Группа:</dt>
-                    <dd class="tours__details-group">до&nbsp;22&nbsp;чел.</dd>
+                  <div class="tours-card__details-container">
+                    <dt class="tours-card__date">Дата набора</dt>
+                    <dd class="tours-card__period">14.06–23.06</dd>
+                  </div>
+                  <div class="tours-card__details-container">
+                    <dt class="tours-card__size">Группа:</dt>
+                    <dd class="tours-card__group">до&nbsp;25&nbsp;чел.</dd>
                   </div>
                 </dl>
               </div>
             </li>
-            <li class="tours__list-card">
-              <div class="tours__list-card-content">
-                <h3 class="tours__list-card-title">Восхождение Манарага</h3>
-                  <span class="tours__info-region">Урал</span>
-                  <span class="tours__info-day">9 дня</span>
-                  <span class="tours__info-night">10 ночи</span>
-                <dl class="tours__details">
-                  <div class="tours__details-container">
-                    <dt class="tours__details-level">Сложность</dt>
-                    <dd class="tours__details-stars"></dd>
+            <li class="tours-card tours-list__item">
+              <div class="tours-card__content">
+                <h3 class="tours-card__title">Через Фишт к Чёрному морю и обратно</h3>
+                <div class="tours-card__info-wrapper">
+                  <p class="tours-card__region">Адыгея</p>
+                  <div class="tours-card__region-container">
+                    <dl class="tours-card__info-hours">
+                      <dt class="tours-card__quantity">7</dt>
+                      <dd class="tours-card__day">дней</dd>
+                    </dl>
+                    <dl class="tours-card__info-hours">
+                      <dt class="tours-card__quantity">6</dt>
+                      <dd class="tours-card__night">ночей</dd>
+                    </dl>
                   </div>
-                  <div class="tours__details-container">
-                    <dt class="tours__details-date">Дата набора</dt>
-                    <dd class="tours__details-period">12.07–19.07</dd>
+                </div>
+                <dl class="tours-card__details">
+                  <div class="tours-card__details-container">
+                    <dt class="tours-card__level">Сложность</dt>
+                    <dd class="tours-card__stars tours-card__stars--4"></dd>
                   </div>
-                  <div class="tours__details-container">
-                    <dt class="tours__details-size">Группа:</dt>
-                    <dd class="tours__details-group">до&nbsp;7&nbsp;чел.</dd>
+                  <div class="tours-card__details-container">
+                    <dt class="tours-card__date">Дата набора</dt>
+                    <dd class="tours-card__period">15.07–19.07</dd>
+                  </div>
+                  <div class="tours-card__details-container">
+                    <dt class="tours-card__size">Группа:</dt>
+                    <dd class="tours-card__group">до&nbsp;22&nbsp;чел.</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+            <li class="tours-card tours-list__item">
+              <div class="tours-card__content">
+                <h3 class="tours-card__title">Восхождение Манарага</h3>
+                <div class="tours-card__info-wrapper">
+                  <p class="tours-card__region">Урал</p>
+                  <div class="tours-card__region-container">
+                    <dl class="tours-card__info-hours">
+                      <dt class="tours-card__quantity">9</dt>
+                      <dd class="tours-card__day">дней</dd>
+                    </dl>
+                    <dl class="tours-card__info-hours">
+                      <dt class="tours-card__quantity">10</dt>
+                      <dd class="tours-card__night">ночей</dd>
+                    </dl>
+                  </div>
+                </div>
+                <dl class="tours-card__details">
+                  <div class="tours-card__details-container">
+                    <dt class="tours-card__level">Сложность</dt>
+                    <dd class="tours-card__stars tours-card__stars--5"></dd>
+                  </div>
+                  <div class="tours-card__details-container">
+                    <dt class="tours-card__date">Дата набора</dt>
+                    <dd class="tours-card__period">12.07–19.07</dd>
+                  </div>
+                  <div class="tours-card__details-container">
+                    <dt class="tours-card__size">Группа:</dt>
+                    <dd class="tours-card__group">до&nbsp;7&nbsp;чел.</dd>
                   </div>
                 </dl>
               </div>

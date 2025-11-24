@@ -1,0 +1,9 @@
+.tours-list {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  padding-block-start: 39px;
+  color: var(--base-white, #ffffff);
+}
