@@ -24,7 +24,7 @@ export const showTours = () => {
   toursCard.forEach((item,index) => {
     if(index >= 1) {
       item.classList.add('hidden');
-    } else if(index > 5) {
+    } else if(index >= 5) {
       btnShowTours.classList.add('hidden');
     }
   });
