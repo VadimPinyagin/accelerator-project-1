@@ -33,6 +33,7 @@
 }
 
 .tours-card__title {
+  position: relative;
   margin: 0;
   padding-block: 18px 30px;
   font-weight: 600;
@@ -40,6 +41,17 @@
   line-height: 26px;
   grid-row: 3;
   grid-column: 1/4;
+
+  &::after {
+    content: "";
+  background-color: var(--base-white, #ffffff);
+  width: 80px;
+  height: 1px;
+  display: block;
+  position: absolute;
+  bottom: 13px;
+  opacity: 0.2;
+  }
 }
 
 .tours-card__info-wrapper {
