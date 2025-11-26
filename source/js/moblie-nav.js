@@ -1,4 +1,4 @@
-import {BODY} from './constants.js'
+import {BODY} from './constants.js';
 export const btnBurger = BODY.querySelector('.nav__btn-burger');
 export const mainNav = BODY.querySelector('.nav');
 export const menuItems = mainNav.querySelectorAll('.nav-menu__item');
