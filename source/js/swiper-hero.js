@@ -1,10 +1,8 @@
 import Swiper from 'swiper';
 import {Pagination} from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
 
 export const initSwiperHero = () => {
-  new Swiper('.swiper', {
+  new Swiper('.hero', {
     loop: true,
     modules: [Pagination],
     pagination: {
