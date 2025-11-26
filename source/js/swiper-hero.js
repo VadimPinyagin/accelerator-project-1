@@ -3,7 +3,6 @@ import {Pagination} from 'swiper/modules';
 
 export const initSwiperHero = () => {
   new Swiper('.hero', {
-    loop: true,
     modules: [Pagination],
     pagination: {
       el: '.swiper-pagination',

@@ -1,6 +1,7 @@
-// Vendor
-// ---------------------------------
+@import 'swiper/css';
+@import 'swiper/css/pagination';
 
+// Vendor
 @import "vendor/normalize.scss";
 @import "common/variables.scss";
 @import "common/mixins.scss";
@@ -18,7 +19,3 @@
 @import "blocks/tours.scss";
 @import "blocks/tours-list.scss";
 @import "blocks/tours-card.scss";
-
-
-@import 'swiper/css';
-@import 'swiper/css/pagination';

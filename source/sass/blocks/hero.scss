@@ -1,9 +1,10 @@
 .hero {
   width: 100vw;
   min-width: 320px;
+  position: relative;
 }
 
-.hero .hero__slide {
+.hero__slide {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -277,11 +278,10 @@
   }
 }
 
-.hero .hero__swiper-pagination {
+.hero__swiper-pagination {
   display: flex;
   justify-content: center;
   column-gap: 12px;
-  width: 100%;
 
   @media (min-width: $desktop-width) {
     width: auto;
@@ -292,7 +292,7 @@
   }
 }
 
-.swiper__pagination .swiper-pagination-bullet {
+.hero__swiper-pagination .swiper-pagination-bullet {
   position: relative;
   width: 16px;
   height: 16px;
@@ -329,7 +329,7 @@
   }
 }
 
-.swiper__pagination .swiper-pagination-bullet-active {
+.hero__swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--base-white, #ffffff);
 }
 
