@@ -8,29 +8,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-inline: 12px;
+    padding-block-end: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    margin-inline-start: 0;
+    align-items: start;
+    text-align: left;
+    padding-inline-start: 120px;
+  }
 }
 
 .hero__slide {
   display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
-
-  // @media (min-width: $tablet-width) {
-  //   padding-inline: 12px;
-  //   padding-block-end: 60px;
-  // }
-
-  // @media (min-width: $desktop-width) {
-  //   padding-inline: 120px;
-  //   padding-block-start: 200px;
-  //   text-align: left;
-  //   display: grid;
-  //   grid-template-columns: repeat(2, 1fr);
-  //   grid-template-rows: repeat(4, auto);
-  //   align-items: end;
-  //   align-content: start;
-  //   row-gap: 23px;
-  // }
 }
 
 .hero__slide-title {
@@ -63,7 +60,7 @@
   padding-block-end: 60px;
 
   @media (min-width: $tablet-width) {
-    padding-inline: 110px;
+    padding-inline: 60px;
     font-size: 17px;
     line-height: 24px;
     padding-block-end: 35px;
@@ -71,10 +68,6 @@
 
   @media (min-width: $desktop-width) {
     padding-inline-start: 0;
-    padding-inline-end: 300px;
-    grid-column: 1;
-    grid-row: 2;
-    padding-block-end: 15px;
   }
 }
 
@@ -90,6 +83,10 @@
   width: 180px;
   text-decoration: none;
   margin-block-end: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-block-end: 30px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-column: 1;
@@ -109,13 +106,13 @@
   }
 }
 
-.hero__slide--2::after {
+.hero__inner--photos::after {
   @media (min-width: $tablet-width) {
     content: "";
     display: block;
     background-repeat: no-repeat;
     width: 442px;
-    height: 362px;
+    height: 387px;
     background-image: image-set("../img/photo-cards-tablet@1x.webp" 1x, "../img/photo-cards-tablet@2x.webp" 2x, "../img/photo-cards-tablet@1x.png" 1x, "../img/photo-cards-tablet@2x.png" 2x);
   }
 
