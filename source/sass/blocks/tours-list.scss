@@ -1,6 +1,5 @@
 .tours-list {
   @include list-reset;
-
-  padding-block-start: 39px;
   color: var(--base-white, #ffffff);
+  padding-block-end: 25px;
 }

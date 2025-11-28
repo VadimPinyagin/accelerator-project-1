@@ -1,6 +1,7 @@
-import '../sass/common/variables.scss'
+import '../sass/common/variables.scss';
 export const BODY = document.querySelector('.page__body');
-export const MOBILE_WIDTH = window.matchMedia("(max-width: 320px)");
-export const TABLET_WIDTH = window.matchMedia("(max-width: 768px)");
-export const DESkTOP_WIDTH = window.matchMedia("(max-width: 1440px)");
-
+export const MOBILE_WIDTH = window.matchMedia('(max-width: 320px)');
+export const TABLET_WIDTH = window.matchMedia('(max-width: 768px)');
+export const DESKTOP_WIDTH = window.matchMedia('(max-width: 1440px)');
+export const TOURS_SPASE_MOBILE = 15;
+export const TOURS_SPASE_TABLET = 18;
