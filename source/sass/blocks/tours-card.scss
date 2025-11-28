@@ -3,6 +3,9 @@
   height: 416px;
   display: flex;
   align-items: end;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: 290px 416px;
 }
 
 .tours-card:nth-child(1) {
