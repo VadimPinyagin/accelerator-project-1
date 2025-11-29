@@ -1,9 +1,11 @@
 import Swiper from 'swiper';
+import {Navigation} from 'swiper/modules';
 import {TOURS_SPACE_MOBILE, TOURS_SPACE_TABLET} from './constants.js';
 
 export const initSwiperTours = () => {
   new Swiper('.tours__cotnainer', {
     direction: 'horizontal',
+    modules: [Navigation],
     breakpoints: {
       0: {
         loop: true,
@@ -22,8 +24,8 @@ export const initSwiperTours = () => {
       clickable: true,
     },
     navigation: {
-      nextEl: '.swiper__button-next',
-      prevEl: '.swiper__button-prev',
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
     keyboard: {
       enabled: true,
