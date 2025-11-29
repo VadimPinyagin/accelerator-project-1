@@ -1,0 +1,24 @@
+.main {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 141px;
+    height: 595px;
+    right: 0;
+    top: 578px;
+    background-image: image-set("../img/clouds-background-mobile-1@1x.webp" 1x, " ../img/clouds-background-mobile-1@2x.webp" 2x, "../img/clouds-background-mobile-1@1x.png" 1x, "../img/clouds-background-mobile-1@2x.png" 2x);
+    background-size: 100%;
+    z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    background-image: image-set("../img/clouds-background-tablet-1@1x.webp" 1x, " ../img/clouds-background-tablet-1@2x.webp" 2x, "../img/clouds-background-tablet-1@1x.png" 1x, "../img/clouds-background-tablet-1@2x.png" 2x);
+    top: 578px;
+    right: -10px;
+    width: 602px;
+    height: 1630px;
+  }
+  }
+}
