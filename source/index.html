@@ -74,38 +74,47 @@
           <h2 class="tours__title" data-duplicate="Ближайшие туры">Ближайшие туры</h2>
           <ul class="tours__list tours-list swiper-wrapper">
             <li class="tours-card tours-list__item swiper-slide">
-              <div class="tours-card__content">
-                <h3 class="tours-card__title">Путешествие вокруг Эльбруса</h3>
-                <div class="tours-card__info-wrapper">
-                  <p class="tours-card__region">Кавказ</p>
-                  <div class="tours-card__region-container">
+              <a class="tours-card__link">
+                <picture class="tours-card__background">
+                  <source type="image/jpg" media="(min-width: 1440px)" width="380" height="416" srcset="img/card-tour-elbrus-desktop@1x.jpg, img/card-tour-elbrus-desktop@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 1440px)" width="380" height="416" srcset="img/card-tour-elbrus-desktop@1x.webp, img/card-tour-elbrus-desktop@2x.webp 2x">
+                  <source type="image/jpg" media="(min-width: 768px)" width="330" height="416" srcset="img/card-tour-elbrus-tablet@1x.jpg, img/card-tour-elbrus-tablet@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 768px)" width="330" height="416" srcset="img/card-tour-elbrus-tablet@1x.webp, img/card-tour-elbrus-tablet@2x.webp 2x">
+                  <img src="img/card-tour-elbrus-mobile@1x.jpg" srcset="img/card-tour-elbrus-mobile@1x.webp, img/card-tour-elbrus-mobile@2x.webp 2x, img/card-tour-elbrus-mobile@2x.jpg 2x" width="290" height="416" alt="Эльбрус. Горный пейзаж с зелеными долинами и заснеженными вершинами">
+                </picture>
+                <div class="tours-card__content">
+                  <h3 class="tours-card__title">Путешествие вокруг Эльбруса</h3>
+                  <div class="tours-card__info-wrapper">
+                    <p class="tours-card__region">Кавказ</p>
+                    <div class="tours-card__region-container">
+                      <dl class="tours-card__info-hours">
+                      <dt class="tours-card__quantity">4</dt>
+                      <dd class="tours-card__day">дня</dd>
+                    </dl>
                     <dl class="tours-card__info-hours">
-                    <dt class="tours-card__quantity">4</dt>
-                    <dd class="tours-card__day">дня</dd>
-                  </dl>
-                  <dl class="tours-card__info-hours">
-                    <dt class="tours-card__quantity">3</dt>
-                    <dd class="tours-card__night">ночи</dd>
-                  </dl>
+                      <dt class="tours-card__quantity">3</dt>
+                      <dd class="tours-card__night">ночи</dd>
+                    </dl>
+                    </div>
                   </div>
+                  <dl class="tours-card__details">
+                    <div class="tours-card__details-container">
+                      <dt class="tours-card__level">Сложность</dt>
+                      <dd class="tours-card__stars tours-card__stars--4"></dd>
+                    </div>
+                    <div class="tours-card__details-container">
+                      <dt class="tours-card__date">Дата набора</dt>
+                      <dd class="tours-card__period">12.06–19.06</dd>
+                    </div>
+                    <div class="tours-card__details-container">
+                      <dt class="tours-card__size">Группа:</dt>
+                      <dd class="tours-card__group">до&nbsp;15&nbsp;чел.</dd>
+                    </div>
+                  </dl>
                 </div>
-                <dl class="tours-card__details">
-                  <div class="tours-card__details-container">
-                    <dt class="tours-card__level">Сложность</dt>
-                    <dd class="tours-card__stars tours-card__stars--4"></dd>
-                  </div>
-                  <div class="tours-card__details-container">
-                    <dt class="tours-card__date">Дата набора</dt>
-                    <dd class="tours-card__period">12.06–19.06</dd>
-                  </div>
-                  <div class="tours-card__details-container">
-                    <dt class="tours-card__size">Группа:</dt>
-                    <dd class="tours-card__group">до&nbsp;15&nbsp;чел.</dd>
-                  </div>
-                </dl>
-              </div>
+              </a>
             </li>
-             <li class="tours-card tours-list__item swiper-slide">
+             <!-- <li class="tours-card tours-list__item swiper-slide">
               <div class="tours-card__content">
                 <h3 class="tours-card__title">Путь к подножию Белухи</h3>
                 <div class="tours-card__info-wrapper">
@@ -200,7 +209,7 @@
                   </div>
                 </dl>
               </div>
-            </li>
+            </li> -->
           </ul>
           <a class="tours__show-more" href="#">Показать все туры</a>
         </div>
