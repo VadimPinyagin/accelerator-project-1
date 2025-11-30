@@ -1,6 +1,6 @@
 import Swiper from 'swiper';
 import {Navigation} from 'swiper/modules';
-import {TOURS_SPACE_MOBILE, TOURS_SPACE_TABLET} from './constants.js';
+import {TOURS_SPACE_MOBILE, TOURS_SPACE_TABLET, TOURS_SPACE_DESKTOP} from './constants.js';
 
 export const initSwiperTours = () => {
   new Swiper('.tours__cotnainer', {
@@ -17,6 +17,11 @@ export const initSwiperTours = () => {
         centeredSlides: false,
         slidesPerView: 2,
         spaceBetween: TOURS_SPACE_TABLET,
+      },
+      1440: {
+        centeredSlides: false,
+        slidesPerView: 3,
+        spaceBetween: TOURS_SPACE_DESKTOP,
       },
     },
     pagination: {
