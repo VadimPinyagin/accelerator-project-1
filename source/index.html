@@ -72,8 +72,8 @@
       <section class="tours" data-test="tours">
         <div class="container tours__cotnainer">
           <h2 class="tours__title" data-duplicate="Ближайшие туры">Ближайшие туры</h2>
-          <button class="tours__button tours__button-prev swiper-button-prev" type="button"></button>
-          <button class="tours__button tours__button-next swiper-button-next" type="button"></button>
+          <button class="slider-arrows tours__button-prev swiper-button-prev" type="button"></button>
+          <button class="slider-arrows tours__button-next swiper-button-next" type="button"></button>
           <ul class="tours__list tours-list swiper-wrapper">
             <li class="tours-card tours-list__item swiper-slide">
               <a class="tours-card__link">
@@ -244,9 +244,57 @@
         </div>
       </section>
       <section class="coaching">
-
+        <div class="container coaching__container">
+          <h2 class="coaching__title">Обучение</h2>
+          <p class="coaching__text-promo">Обучение проводится квалифицированными специалистами,
+            за&nbsp;плечами которых десятки пройденных маршрутов Кавказа, Крыма,
+            Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.
+          </p>
+          <div class="coaching__instructors instructors">      <!--swiper-->
+            <h3 class="instructors__title">Наши инструкторы</h3>
+            <button class="slider-arrows instructors__button-prev swiper-button-prev"></button>
+            <button class="slider-arrows instructors__button-next swiper-button-next"></button>
+            <ul class="instructors__list"> <!--swiper-wrapper-->
+              <li class="instructors__card swiper-slide">
+                <h4 class="instructors__name">Александр Прокофьев</h4>
+                <a class="instructors__link" href="#" aria-label="Социальные сети"></a>
+                <p class="instructors__item-text">Строгий и внимательный инструктор,
+                  веселый и общительный
+                  человек. Любит природу.</p>
+                <picture class="instructors__photo-container">
+                  <img class="instructors__photo" src="img/alexandr-prokofyev@1x.jpg" srcset="img/alexandr-prokofyev@1x.webp, img/alexandr-prokofyev@2x.webp 2x, img/alexandr-prokofyev@2x.jpg 2x" alt="Александр Прокофьев">
+                </picture>
+              </li>
+              <li class="instructors__card swiper-slide">
+                <h4 class="instructors__name">Светлана Афиногенова</h4>
+                <a class="instructors__link" href="#" aria-label="Социальные сети"></a>
+                <p class="instructors__item-text">Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать &mdash; в этом назначение жизни.</p>
+                <picture>
+                  <img class="instructors__photo" src="img/svetlana-afinogenova@1x.jpg" srcset="img/svetlana-afinogenova@1x.webp, img/svetlana-afinogenova@2x.webp 2x, img/svetlana-afinogenova@2x.jpg 2x" alt="Светлана Афиногенова">
+                </picture>
+              </li>
+              <li class="instructors__card swiper-slide">
+                <h4 class="instructors__name">Надежда Колесниченко</h4>
+                <a class="instructors__link" href="#" aria-label="Социальные сети"></a>
+                <p class="instructors__item-text">Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
+                <picture>
+                  <img class="instructors__photo" src="img/nadezhda-kosnichenko@1x.jpg" srcset="img/nadezhda-kosnichenko@1x.webp, img/nadezhda-kosnichenko@2x.webp 2x, img/nadezhda-kosnichenko@2x.jpg 2x" alt="Надежда Колесниченко">
+                </picture>
+              </li>
+               <li class="instructors__card swiper-slide">
+                <h4 class="instructors__name">Федор Кайгородов</h4>
+                <a class="instructors__link" href="#" aria-label="Социальные сети"></a>
+                <p class="instructors__item-text">Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
+                <picture>
+                  <img class="instructors__photo" src="img/fedor-kaigorodov@1x.jpg" srcset="img/fedor-kaigorodov@1x.webp, img/fedor-kaigorodov@2x.webp 2x, img/fedor-kaigorodov@2x.jpg 2x" alt="Александр Прокофьев">
+                </picture>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
-    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/main.js">
+    </script>
   </body>
 </html>

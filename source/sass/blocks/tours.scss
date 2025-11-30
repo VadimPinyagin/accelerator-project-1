@@ -126,36 +126,6 @@
   }
 }
 
-.tours__button .swiper-navigation-icon {
-  display: none;
-}
-
-.tours__button {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 37px;
-    height: 35px;
-    border: none;
-    padding: 0;
-    background-color: var(--dark-blue, #0266c1);
-    color: var(--dark-blue, #0266c1);
-  }
-
-  @media (min-width: $desktop-width) {
-    //
-  }
-}
-
-.tours__button:disabled{
-  background-color: var(--disabled, #999999);
-  color: var(--disabled, #999999);
-}
-
 .tours__button-prev {
   right: 41px;
 
