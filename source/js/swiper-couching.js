@@ -2,8 +2,8 @@ import Swiper from 'swiper';
 import {Navigation} from 'swiper/modules';
 import {TOURS_SPACE_MOBILE, TOURS_SPACE_TABLET, TOURS_SPACE_DESKTOP} from './constants.js';
 
-export const initSwiperTours = () => {
-  new Swiper('.tours__cotnainer', {
+export const initSwiperCoaching = () => {
+  new Swiper('.instructors', {
     direction: 'horizontal',
     modules: [Navigation],
     breakpoints: {
@@ -15,12 +15,12 @@ export const initSwiperTours = () => {
       },
       768: {
         centeredSlides: false,
-        slidesPerView: 2,
-        spaceBetween: TOURS_SPACE_TABLET,
+        slidesPerView: 3,
+        spaceBetween: TOURS_SPACE_TABLET + 2,
       },
       1440: {
         centeredSlides: false,
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: TOURS_SPACE_DESKTOP,
       },
     },
