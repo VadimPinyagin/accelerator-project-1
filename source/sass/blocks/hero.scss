@@ -11,15 +11,13 @@
 
   @media (min-width: $tablet-width) {
     padding-inline: 12px;
-    padding-block-end: 60px;
+    padding-block-end: 31px;
+    margin-block: 0;
+    margin-inline: auto;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
-    margin: 0;
-    align-items: start;
-    justify-content: start;
-    text-align: left;
   }
 }
 
@@ -32,7 +30,8 @@
   @media (min-width: $desktop-width) {
     align-items: start;
     justify-content: center;
-    padding-inline-start: 120px;
+    text-align: left;
+    // padding-inline-start: 120px;
   }
 }
 
