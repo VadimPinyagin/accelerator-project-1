@@ -35,7 +35,7 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  padding-block-start: 39px;
+  padding-block: 39px 35px;
 
   @media (min-width: $tablet-width) {
     padding-block-start: 60px;
@@ -103,7 +103,7 @@
   text-transform: uppercase;
   text-align: center;
   color: var(--dark-gray, #2d383f);
-  padding-block: 10px;
+  padding-block: 6px;
   padding-inline: 5px;
   cursor: pointer;
 

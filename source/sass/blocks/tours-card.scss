@@ -4,6 +4,10 @@
   align-items: end;
 }
 
+.tours-card__image {
+  display: contents;
+}
+
 .tours-card__background {
   z-index: 0;
   grid-row: 1;
