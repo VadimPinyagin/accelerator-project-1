@@ -1,3 +1,7 @@
+.coaching {
+  padding-block-end: 40px;
+}
+
 .coaching__title {
   margin: 0;
   font-weight: 800;
@@ -14,21 +18,63 @@
   line-height: 16px;
   padding-block: 25px;
   padding-block-end: 23px;
+
+  @media (min-width: $tablet-width) {
+    padding-block-end: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    line-height: 21px;
+    padding-block-end: 27px;
+  }
 }
 
 .coaching__action-list {
   @include list-reset;
   display: flex;
   flex-direction: column;
-  row-gap: 25px;
+  row-gap: var(--action-points-gap);
   margin-inline-start: 6px;
-  padding-inline-start: 24px;
+  padding-inline: 24px 27px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, auto);
     row-gap: 104px;
     column-gap: 198px;
+    margin-inline-start: 0;
+    padding-inline: 0;
+    padding-block-start: 104px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    padding-inline-end: 0;
+    padding-block-start: 0;
+  }
+}
+
+.coaching__item {
+  display: flex;
+  position: relative;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  padding-inline-start: 33px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 243px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-inline-start: 44px;
   }
 }
 
@@ -63,8 +109,7 @@
   display: block;
   position: absolute;
   width: 2px;
-  height: 38px;
-  border-radius: 50%;
+  height: calc(100% + var(--action-points-gap) - 20px);
   background-color: var(--dark-blue, #0266c1);
   box-shadow: 0px -27px 0px 0px var(--dark-blue, #0266c1);
   left: -24px;
@@ -73,19 +118,12 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
-}
 
-.coaching__item {
-  display: flex;
-  position: relative;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-  padding-inline-start: 33px;
-  padding-inline-end: 27px;
-
-  @media (min-width: $tablet-width) {
-    padding-inline-end: 0;
+  @media (min-width: $desktop-width) {
+    display: block;
+    height: 2px;
+    width: calc(100% + var(--action-points-gap));
+    top: 10px;
   }
 }
 
@@ -137,3 +175,16 @@
   background-size: 25px 25px;
 }
 
+.coaching__item::before {
+  @media (min-width: $desktop-width) {
+    left: 10px;
+  }
+}
+
+.coaching__item br{
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
