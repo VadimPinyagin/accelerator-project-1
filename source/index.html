@@ -32,41 +32,22 @@
     <main class="main">
       <h1 class="visually-hidden">Горные туры. Поездки, походы, восхождения.</h1>
       <section class="hero" data-test="hero">
-        <div class="swiper-wrapper">
-          <div class="hero__slide hero__slide--1 swiper-slide">
+        <ul class="hero__slides-list swiper-wrapper">
+          <li class="hero__slide swiper-slide">
             <div class="hero__inner container">
-              <h2 class="hero__slide-title">Захватывающие вершины&nbsp;Кавказа</h2>
-              <p class="hero__slide-description">В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
-              <a class="hero__slide-link" href="#">Смотреть тур</a>
+              <h2 class="hero__slide-title">Захватывающие вершины Кавказа</h2>
+              <div class="hero__slide-description">В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</div>
+              <a class="hero__slide-link" href="#">Смотреть тур</a>
               <div class="hero__slide-details">
                 <p class="hero__slide-period">6 дней/5 ночей</p>
                 <p class="hero__slide-category">Высокая сложность</p>
               </div>
             </div>
-          </div>
-          <div class="hero__slide hero__slide--2 swiper-slide">
-            <div class="hero__inner hero__inner--photos container">
-              <h2 class="hero__slide-title">Невероятная природа&nbsp;Камчатки</h2>
-              <p class="hero__slide-description hero__slide-description--photos">Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
-              <a class="hero__slide-link" href="#">Смотреть тур</a>
-              <div class="hero__slide-details">
-                <p class="hero__slide-period">9 дней/10 ночей</p>
-                <p class="hero__slide-category">Средняя сложность</p>
-              </div>
-            </div>
-          </div>
-          <div class="hero__slide hero__slide--3 swiper-slide">
-            <div class="hero__inner container">
-              <h2 class="hero__slide-title">Магические пейзажи Алтайского Края</h2>
-              <p class="hero__slide-description">Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
-              <a class="hero__slide-link" href="#">Смотреть тур</a>
-              <div class="hero__slide-details">
-                <p class="hero__slide-period">8 дней/7 ночей</p>
-                <p class="hero__slide-category">Лёгкая сложность</p>
-              </div>
-            </div>
-          </div>
-        </div>
+            <picture>
+              <img class="hero__slide-background" src="">
+            </picture>
+          </li>
+        </ul>
         <div class="hero__swiper-pagination swiper-pagination"></div>
       </section>
       <section class="tours" data-test="tours">
@@ -78,11 +59,11 @@
             <li class="tours-card tours-list__item swiper-slide">
               <a class="tours-card__link">
                 <picture class="tours-card__image">
-                  <source type="image/jpg" media="(min-width: 1440px)" width="380" height="416" srcset="img/card-tour-elbrus-desktop@1x.jpg, img/card-tour-elbrus-desktop@2x.jpg 2x">
-                  <source type="image/webp" media="(min-width: 1440px)" width="380" height="416" srcset="img/card-tour-elbrus-desktop@1x.webp, img/card-tour-elbrus-desktop@2x.webp 2x">
-                  <source type="image/jpg" media="(min-width: 768px)" width="330" height="416" srcset="img/card-tour-elbrus-tablet@1x.jpg, img/card-tour-elbrus-tablet@2x.jpg 2x">
-                  <source type="image/webp" media="(min-width: 768px)" width="330" height="416" srcset="img/card-tour-elbrus-tablet@1x.webp, img/card-tour-elbrus-tablet@2x.webp 2x">
-                  <img class="tours-card__background" src="img/card-tour-elbrus-mobile@1x.jpg" srcset="img/card-tour-elbrus-mobile@1x.webp, img/card-tour-elbrus-mobile@2x.webp 2x, img/card-tour-elbrus-mobile@2x.jpg 2x" width="290" height="416" alt="Эльбрус. Горный пейзаж с зелеными долинами и заснеженными вершинами">
+                  <source type="image/jpg" media="(min-width: 1440px)" width="380" height="416" srcset="img/tours-slider/card-tour-elbrus-desktop@1x.jpg, img/tours-slider/card-tour-elbrus-desktop@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 1440px)" width="380" height="416" srcset="img/tours-slider/card-tour-elbrus-desktop@1x.webp, img/tours-slider/card-tour-elbrus-desktop@2x.webp 2x">
+                  <source type="image/jpg" media="(min-width: 768px)" width="330" height="416" srcset="img/tours-slider/card-tour-elbrus-tablet@1x.jpg, img/tours-slider/card-tour-elbrus-tablet@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 768px)" width="330" height="416" srcset="img/tours-slider/card-tour-elbrus-tablet@1x.webp, img/tours-slider/card-tour-elbrus-tablet@2x.webp 2x">
+                  <img class="tours-card__background" src="img/tours-slider/card-tour-elbrus-mobile@1x.jpg" srcset="img/tours-slider/card-tour-elbrus-mobile@1x.webp, img/tours-slider/card-tour-elbrus-mobile@2x.webp 2x, img/tours-slider/card-tour-elbrus-mobile@2x.jpg 2x" width="290" height="416" alt="Эльбрус. Горный пейзаж с зелеными долинами и заснеженными вершинами">
                 </picture>
                 <div class="tours-card__content">
                   <h3 class="tours-card__title">Путешествие вокруг&nbsp;Эльбруса</h3>
@@ -119,11 +100,11 @@
             <li class="tours-card tours-list__item swiper-slide">
               <a class="tours-card__link">
                 <picture class="tours-card__background">
-                  <source type="image/jpg" media="(min-width: 1440px)" width="380" height="416" srcset="img/card-tour-belukha-desktop@1x.jpg, img/card-tour-belukha-desktop@2x.jpg 2x">
-                  <source type="image/webp" media="(min-width: 1440px)" width="380" height="416" srcset="img/card-tour-belukha-desktop@1x.webp, img/card-tour-belukha-desktop@2x.webp 2x">
-                  <source type="image/jpg" media="(min-width: 768px)" width="330" height="416" srcset="img/card-tour-belukha-tablet@1x.jpg, img/card-tour-belukha-tablet@2x.jpg 2x">
-                  <source type="image/webp" media="(min-width: 768px)" width="330" height="416" srcset="img/card-tour-belukha-tablet@1x.webp, img/card-tour-belukha-tablet@2x.webp 2x">
-                  <img src="img/card-tour-belukha-mobile@1x.jpg" srcset="img/card-tour-belukha-mobile@1x.webp, img/card-tour-belukha-mobile@2x.webp 2x, img/card-tour-belukha-mobile@2x.jpg 2x" width="290" height="416" alt="Эльбрус. Горный пейзаж с зелеными долинами и заснеженными вершинами">
+                  <source type="image/jpg" media="(min-width: 1440px)" width="380" height="416" srcset="img/tours-slider/card-tour-belukha-desktop@1x.jpg, img/tours-slider/card-tour-belukha-desktop@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 1440px)" width="380" height="416" srcset="img/tours-slider/card-tour-belukha-desktop@1x.webp, img/tours-slider/card-tour-belukha-desktop@2x.webp 2x">
+                  <source type="image/jpg" media="(min-width: 768px)" width="330" height="416" srcset="img/tours-slider/card-tour-belukha-tablet@1x.jpg, img/tours-slider/card-tour-belukha-tablet@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 768px)" width="330" height="416" srcset="img/tours-slider/card-tour-belukha-tablet@1x.webp, img/tours-slider/card-tour-belukha-tablet@2x.webp 2x">
+                  <img src="img/tours-slider/card-tour-belukha-mobile@1x.jpg" srcset="img/tours-slider/card-tour-belukha-mobile@1x.webp, img/tours-slider/card-tour-belukha-mobile@2x.webp 2x, img/tours-slider/card-tour-belukha-mobile@2x.jpg 2x" width="290" height="416" alt="Эльбрус. Горный пейзаж с зелеными долинами и заснеженными вершинами">
                 </picture>
                 <div class="tours-card__content">
                   <h3 class="tours-card__title">Путь к подножию<br> Белухи</h3>
@@ -160,11 +141,11 @@
             <li class="tours-card tours-list__item swiper-slide">
               <a class="tours-card__link">
                 <picture class="tours-card__background">
-                  <source type="image/jpg" media="(min-width: 1440px)" width="380" height="416" srcset="img/card-tour-fisht-desktop@1x.jpg, img/card-tour-fisht-desktop@2x.jpg 2x">
-                  <source type="image/webp" media="(min-width: 1440px)" width="380" height="416" srcset="img/card-tour-fisht-desktop@1x.webp, img/card-tour-fisht-desktop@2x.webp 2x">
-                  <source type="image/jpg" media="(min-width: 768px)" width="330" height="416" srcset="img/card-tour-fisht-tablet@1x.jpg, img/card-tour-fisht-tablet@2x.jpg 2x">
-                  <source type="image/webp" media="(min-width: 768px)" width="330" height="416" srcset="img/card-tour-fisht-tablet@1x.webp, img/card-tour-fisht-tablet@2x.webp 2x">
-                  <img src="img/card-tour-fisht-mobile@1x.jpg" srcset="img/card-tour-fisht-mobile@1x.webp, img/card-tour-fisht-mobile@2x.webp 2x, img/card-tour-fisht-mobile@2x.jpg 2x" width="290" height="416" alt="Эльбрус. Горный пейзаж с зелеными долинами и заснеженными вершинами">
+                  <source type="image/jpg" media="(min-width: 1440px)" width="380" height="416" srcset="img/tours-slider/card-tour-fisht-desktop@1x.jpg, img/tours-slider/card-tour-fisht-desktop@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 1440px)" width="380" height="416" srcset="img/tours-slider/card-tour-fisht-desktop@1x.webp, img/tours-slider/card-tour-fisht-desktop@2x.webp 2x">
+                  <source type="image/jpg" media="(min-width: 768px)" width="330" height="416" srcset="img/tours-slider/card-tour-fisht-tablet@1x.jpg, img/tours-slider/card-tour-fisht-tablet@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 768px)" width="330" height="416" srcset="img/tours-slider/card-tour-fisht-tablet@1x.webp, img/tours-slider/card-tour-fisht-tablet@2x.webp 2x">
+                  <img src="img/tours-slider/card-tour-fisht-mobile@1x.jpg" srcset="img/tours-slider/card-tour-fisht-mobile@1x.webp, img/tours-slider/card-tour-fisht-mobile@2x.webp 2x, img/tours-slider/card-tour-fisht-mobile@2x.jpg 2x" width="290" height="416" alt="Эльбрус. Горный пейзаж с зелеными долинами и заснеженными вершинами">
                 </picture>
                 <div class="tours-card__content">
                   <h3 class="tours-card__title">Через Фишт <br>к Чёрному морю и обратно</h3>
@@ -201,11 +182,11 @@
             <li class="tours-card tours-list__item swiper-slide">
               <a class="tours-card__link">
                 <picture class="tours-card__background">
-                  <source type="image/jpg" media="(min-width: 1440px)" width="380" height="416" srcset="img/card-tour-manaraga-desktop@1x.jpg, img/card-tour-manaraga-desktop@2x.jpg 2x">
-                  <source type="image/webp" media="(min-width: 1440px)" width="380" height="416" srcset="img/card-tour-manaraga-desktop@1x.webp, img/card-tour-manaraga-desktop@2x.webp 2x">
-                  <source type="image/jpg" media="(min-width: 768px)" width="330" height="416" srcset="img/card-tour-manaraga-tablet@1x.jpg, img/card-tour-manaraga-tablet@2x.jpg 2x">
-                  <source type="image/webp" media="(min-width: 768px)" width="330" height="416" srcset="img/card-tour-manaraga-tablet@1x.webp, img/card-tour-manaraga-tablet@2x.webp 2x">
-                  <img src="img/card-tour-manaraga-mobile@1x.jpg" srcset="img/card-tour-manaraga-mobile@1x.webp, img/card-tour-manaraga-mobile@2x.webp 2x, img/card-tour-manaraga-mobile@2x.jpg 2x" width="290" height="416" alt="Эльбрус. Горный пейзаж с зелеными долинами и заснеженными вершинами">
+                  <source type="image/jpg" media="(min-width: 1440px)" width="380" height="416" srcset="img/tours-slider/card-tour-manaraga-desktop@1x.jpg, img/tours-slider/card-tour-manaraga-desktop@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 1440px)" width="380" height="416" srcset="img/tours-slider/card-tour-manaraga-desktop@1x.webp, img/tours-slider/card-tour-manaraga-desktop@2x.webp 2x">
+                  <source type="image/jpg" media="(min-width: 768px)" width="330" height="416" srcset="img/tours-slider/card-tour-manaraga-tablet@1x.jpg, img/tours-slider/card-tour-manaraga-tablet@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 768px)" width="330" height="416" srcset="img/tours-slider/card-tour-manaraga-tablet@1x.webp, img/tours-slider/card-tour-manaraga-tablet@2x.webp 2x">
+                  <img src="img/tours-slider/card-tour-manaraga-mobile@1x.jpg" srcset="img/tours-slider/card-tour-manaraga-mobile@1x.webp, img/tours-slider/card-tour-manaraga-mobile@2x.webp 2x, img/tours-slider/card-tour-manaraga-mobile@2x.jpg 2x" width="290" height="416" alt="Эльбрус. Горный пейзаж с зелеными долинами и заснеженными вершинами">
                 </picture>
                 <div class="tours-card__content">
                   <h3 class="tours-card__title">Восхождение Манарага</h3>
@@ -260,7 +241,7 @@
                 <a class="instructors__link" href="#" aria-label="Социальные сети"></a>
                 <p class="instructors__item-text">Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
                 <picture class="instructors__photo-container">
-                  <img class="instructors__photo" src="img/nadezhda-kosnichenko@1x.jpg" width="260" height="200" srcset="img/nadezhda-kosnichenko@1x.webp, img/nadezhda-kosnichenko@2x.webp 2x, img/nadezhda-kosnichenko@2x.jpg 2x" alt="Надежда Колесниченко">
+                  <img class="instructors__photo" src="img/instructors/nadezhda-kosnichenko@1x.jpg" width="260" height="200" srcset="img/instructors/nadezhda-kosnichenko@1x.webp, img/instructors/nadezhda-kosnichenko@2x.webp 2x, img/instructors/nadezhda-kosnichenko@2x.jpg 2x" alt="Надежда Колесниченко">
                 </picture>
               </li>
               <li class="instructors__card swiper-slide">
@@ -270,7 +251,7 @@
                   веселый и общительный
                   человек. Любит природу.</p>
                 <picture class="instructors__photo-container">
-                  <img class="instructors__photo" src="img/alexandr-prokofyev@1x.jpg" srcset="img/alexandr-prokofyev@1x.webp, img/alexandr-prokofyev@2x.webp 2x, img/alexandr-prokofyev@2x.jpg 2x" width="260" height="200" alt="Александр Прокофьев">
+                  <img class="instructors__photo" src="img/instructors/alexandr-prokofyev@1x.jpg" srcset="img/instructors/alexandr-prokofyev@1x.webp, img/instructors/alexandr-prokofyev@2x.webp 2x, img/instructors/alexandr-prokofyev@2x.jpg 2x" width="260" height="200" alt="Александр Прокофьев">
                 </picture>
               </li>
               <li class="instructors__card swiper-slide">
@@ -278,7 +259,7 @@
                 <a class="instructors__link" href="#" aria-label="Социальные сети"></a>
                 <p class="instructors__item-text">Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать &mdash; в этом назначение жизни.</p>
                 <picture class="instructors__photo-container">
-                  <img class="instructors__photo" src="img/svetlana-afinogenova@1x.jpg" srcset="img/svetlana-afinogenova@1x.webp, img/svetlana-afinogenova@2x.webp 2x, img/svetlana-afinogenova@2x.jpg 2x" width="260" height="200" alt="Светлана Афиногенова">
+                  <img class="instructors__photo" src="img/instructors/svetlana-afinogenova@1x.jpg" srcset="img/instructors/svetlana-afinogenova@1x.webp, img/instructors/svetlana-afinogenova@2x.webp 2x, img/instructors/svetlana-afinogenova@2x.jpg 2x" width="260" height="200" alt="Светлана Афиногенова">
                 </picture>
               </li>
               <li class="instructors__card swiper-slide">
@@ -286,7 +267,7 @@
                 <a class="instructors__link" href="#" aria-label="Социальные сети"></a>
                 <p class="instructors__item-text">Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
                 <picture class="instructors__photo-container">
-                  <img class="instructors__photo" src="img/fedor-kaigorodov@1x.jpg" srcset="img/fedor-kaigorodov@1x.webp, img/fedor-kaigorodov@2x.webp 2x, img/fedor-kaigorodov@2x.jpg 2x" width="260" height="200" alt="Александр Прокофьев">
+                  <img class="instructors__photo" src="img/instructors/fedor-kaigorodov@1x.jpg" srcset="img/instructors/fedor-kaigorodov@1x.webp, img/instructors/fedor-kaigorodov@2x.webp 2x, img/instructors/fedor-kaigorodov@2x.jpg 2x" width="260" height="200" alt="Александр Прокофьев">
                 </picture>
               </li>
               <li class="instructors__card swiper-slide">
@@ -294,7 +275,7 @@
                 <a class="instructors__link" href="#" aria-label="Социальные сети"></a>
                 <p class="instructors__item-text">Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
                 <picture class="instructors__photo-container">
-                  <img class="instructors__photo" src="img/daniel-vasnetsov@1x.jpg" srcset="img/daniel-vasnetsov@1x.webp, img/daniel-vasnetsov@2x.webp 2x, img/daniel-vasnetsov@2x.jpg 2x" width="260" height="200" alt="Александр Прокофьев">
+                  <img class="instructors__photo" src="img/instructors/daniel-vasnetsov@1x.jpg" srcset="img/instructors/daniel-vasnetsov@1x.webp, img/instructors/daniel-vasnetsov@2x.webp 2x, img/instructors/daniel-vasnetsov@2x.jpg 2x" width="260" height="200" alt="Александр Прокофьев">
                 </picture>
               </li>
             </ul>
