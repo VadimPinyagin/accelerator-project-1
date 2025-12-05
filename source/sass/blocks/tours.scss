@@ -1,33 +1,31 @@
 .tours {
   position: relative;
+}
 
-    &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 141px;
-    height: 595px;
+.tours::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 141px;
+  height: 595px;
+  right: 0;
+  top: 10px;
+  background: image-set("../../img/tours-slider/clouds-background-mobile-1@1x.webp" 1x, " ../img/clouds-background-mobile-1@2x.webp" 2x, "../img/clouds-background-mobile-1@1x.png" 1x, "../img/clouds-background-mobile-1@2x.png" 2x);
+
+  @media (min-width: $tablet-width) {
+    background: image-set("../../img/tours-slider/clouds-background-tablet-1@1x.webp" 1x, " ../img/clouds-background-tablet-1@2x.webp" 2x, "../img/clouds-background-tablet-1@1x.png" 1x, "../img/clouds-background-tablet-1@2x.png" 2x);
+    top: -92px;
     right: 0;
-    top: 10px;
-    background-image: image-set("../img/clouds-background-mobile-1@1x.webp" 1x, " ../img/clouds-background-mobile-1@2x.webp" 2x, "../img/clouds-background-mobile-1@1x.png" 1x, "../img/clouds-background-mobile-1@2x.png" 2x);
-    background-size: 100%;
-    z-index: -1;
+    width: 425px;
+    height: 1630px;
+  }
 
-    @media (min-width: $tablet-width) {
-      background-image: image-set("../img/clouds-background-tablet-1@1x.webp" 1x, " ../img/clouds-background-tablet-1@2x.webp" 2x, "../img/clouds-background-tablet-1@1x.png" 1x, "../img/clouds-background-tablet-1@2x.png" 2x);
-      top: -92px;
-      right: 0;
-      width: 425px;
-      height: 1630px;
-    }
-
-    @media (min-width: $tablet-width) {
-      background-image: image-set("../img/clouds-background-desktop-1@1x.webp" 1x, " ../img/clouds-background-desktop-1@2x.webp" 2x, "../img/clouds-background-desktop-1@1x.png" 1x, "../img/clouds-background-desktop-1@2x.png" 2x);
-      top: -126px;
-      right: 0;
-      width: 602px;
-      height: 1630px;
-    }
+  @media (min-width: $desktop-width) {
+    background: image-set("../../img/tours-slider/clouds-background-desktop-1@1x.webp" 1x, " ../img/clouds-background-desktop-1@2x.webp" 2x, "../img/clouds-background-desktop-1@1x.png" 1x, "../img/clouds-background-desktop-1@2x.png" 2x);
+    top: -126px;
+    right: 0;
+    width: 602px;
+    height: 1630px;
   }
 }
 
