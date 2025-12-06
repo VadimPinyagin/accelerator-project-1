@@ -30,14 +30,14 @@
 }
 
 .hero__slide--сaucasus {
-  --hero-slide-background: image-set("../../img/hero-slider/сaucasus-slide-mobile@1x.webp" 1x, "../../img/hero-slider/сaucasus-slide-mobile@2x.webp" 2x, "../../img/hero-slider/сaucasus-slide-mobile@1x.jpg" 1x, "../../img/hero-slider/сaucasus-slide-mobile@2x.jpg" 2x);
+  --hero-slide-background: image-set("../img/hero-slider/сaucasus-slide-mobile@1x.webp" 1x, "../img/hero-slider/сaucasus-slide-mobile@2x.webp" 2x, "../img/hero-slider/сaucasus-slide-mobile@1x.jpg" 1x, "../img/hero-slider/сaucasus-slide-mobile@2x.jpg" 2x);
 
   @media (min-width: $tablet-width) {
-    --hero-slide-background: image-set("../../img/hero-slider/сaucasus-slide-tablet@1x.webp" 1x, "../../img/hero-slider/сaucasus-slide-tablet@2x.webp" 2x, "../../img/hero-slider/сaucasus-slide-tablet@1x.jpg" 1x, "../../img/hero-slider/сaucasus-slide-tablet@2x.jpg" 2x);
+    --hero-slide-background: image-set("../img/hero-slider/сaucasus-slide-tablet@1x.webp" 1x, "../img/hero-slider/сaucasus-slide-tablet@2x.webp" 2x, "../img/hero-slider/сaucasus-slide-tablet@1x.jpg" 1x, "../img/hero-slider/сaucasus-slide-tablet@2x.jpg" 2x);
   }
 
   @media (min-width: $desktop-width) {
-    --hero-slide-background: image-set("../../img/hero-slider/сaucasus-slide-desktop@1x.webp" 1x, "../../img/hero-slider/сaucasus-slide-desktop@2x.webp" 2x, "../../img/hero-slider/сaucasus-slide-desktop@1x.jpg" 1x, "../../img/hero-slider/сaucasus-slide-desktop@2x.jpg" 2x);
+    --hero-slide-background: image-set("../img/hero-slider/сaucasus-slide-desktop@1x.webp" 1x, "../img/hero-slider/сaucasus-slide-desktop@2x.webp" 2x, "../img/hero-slider/сaucasus-slide-desktop@1x.jpg" 1x, "../img/hero-slider/сaucasus-slide-desktop@2x.jpg" 2x);
   }
 }
 
@@ -50,16 +50,16 @@
     display: none;
   }
 
-  --hero-slide-background: image-set("../../img/hero-slider/kamchatka-slide-mobile@1x.webp" 1x, "../../img/hero-slider/kamchatka-slide-mobile@2x.webp" 2x, "../../img/hero-slider/kamchatka-slide-mobile@1x.jpg" 1x, "../../img/hero-slider/kamchatka-slide-mobile@2x.jpg" 2x);
+  --hero-slide-background: image-set("../img/hero-slider/kamchatka-slide-mobile@1x.webp" 1x, "../img/hero-slider/kamchatka-slide-mobile@2x.webp" 2x, "../img/hero-slider/kamchatka-slide-mobile@1x.jpg" 1x, "../img/hero-slider/kamchatka-slide-mobile@2x.jpg" 2x);
 
   @media (min-width: $tablet-width) {
-    --hero-slide-background: image-set("../../img/hero-slider/kamchatka-slide-tablet@1x.webp" 1x, "../../img/hero-slider/kamchatka-slide-tablet@2x.webp" 2x, "../../img/hero-slider/kamchatka-slide-tablet@1x.jpg" 1x, "../../img/hero-slider/kamchatka-slide-tablet@2x.jpg" 2x);
+    --hero-slide-background: image-set("../img/hero-slider/kamchatka-slide-tablet@1x.webp" 1x, "../img/hero-slider/kamchatka-slide-tablet@2x.webp" 2x, "../img/hero-slider/kamchatka-slide-tablet@1x.jpg" 1x, "../img/hero-slider/kamchatka-slide-tablet@2x.jpg" 2x);
 
-    --additionalcontent: image-set("../../img/hero-slider/photo-cards-tablet@1x.webp" 1x, "../../img/hero-slider/photo-cards-tablet@2x.webp" 2x, "../../img/hero-slider/photo-cards-tablet@1x.png" 1x, "../../img/hero-slider/photo-cards-tablet@2x.png" 2x);
+    --additionalcontent: image-set("../img/hero-slider/photo-cards-tablet@1x.webp" 1x, "../img/hero-slider/photo-cards-tablet@2x.webp" 2x, "../img/hero-slider/photo-cards-tablet@1x.png" 1x, "../img/hero-slider/photo-cards-tablet@2x.png" 2x);
   }
 
   @media (min-width: $desktop-width) {
-    --hero-slide-background: image-set("../../img/hero-slider/kamchatka-slide-desktop@1x.webp" 1x, "../../img/hero-slider/kamchatka-slide-desktop@2x.webp" 2x, "../../img/hero-slider/kamchatka-slide-desktop@1x.jpg" 1x, "../../img/hero-slider/kamchatka-slide-desktop@2x.jpg" 2x);
+    --hero-slide-background: image-set("../img/hero-slider/kamchatka-slide-desktop@1x.webp" 1x, "../img/hero-slider/kamchatka-slide-desktop@2x.webp" 2x, "../img/hero-slider/kamchatka-slide-desktop@1x.jpg" 1x, "../img/hero-slider/kamchatka-slide-desktop@2x.jpg" 2x);
   }
 }
 
@@ -68,19 +68,19 @@
     display: block;
     width: 443px;
     height: 365px;
-    background: image-set("../../img/hero-slider/photo-cards-tablet@1x.webp" 1x, "../../img/hero-slider/photo-cards-tablet@2x.webp" 2x, "../../img/hero-slider/photo-cards-tablet@1x.png" 1x, "../../img/hero-slider/photo-cards-tablet@2x.png" 2x) no-repeat bottom / cover;
+    background: image-set("../img/hero-slider/photo-cards-tablet@1x.webp" 1x, "../img/hero-slider/photo-cards-tablet@2x.webp" 2x, "../img/hero-slider/photo-cards-tablet@1x.png" 1x, "../img/hero-slider/photo-cards-tablet@2x.png" 2x) no-repeat bottom / cover;
   }
 }
 
 .hero__slide--altai {
-  --hero-slide-background: image-set("../../img/hero-slider/altai-slide-mobile@1x.webp" 1x, "../../img/hero-slider/altai-slide-mobile@2x.webp" 2x, "../../img/hero-slider/altai-slide-mobile@1x.jpg" 1x, "../../img/hero-slider/altai-slide-mobile@2x.jpg" 2x);
+  --hero-slide-background: image-set("../img/hero-slider/altai-slide-mobile@1x.webp" 1x, "../img/hero-slider/altai-slide-mobile@2x.webp" 2x, "../img/hero-slider/altai-slide-mobile@1x.jpg" 1x, "../img/hero-slider/altai-slide-mobile@2x.jpg" 2x);
 
   @media (min-width: $tablet-width) {
-    --hero-slide-background: image-set("../../img/hero-slider/altai-slide-tablet@1x.webp" 1x, "../../img/hero-slider/altai-slide-tablet@2x.webp" 2x, "../../img/hero-slider/altai-slide-tablet@1x.jpg" 1x, "../../img/hero-slider/altai-slide-tablet@2x.jpg" 2x);
+    --hero-slide-background: image-set("../img/hero-slider/altai-slide-tablet@1x.webp" 1x, "../img/hero-slider/altai-slide-tablet@2x.webp" 2x, "../img/hero-slider/altai-slide-tablet@1x.jpg" 1x, "../img/hero-slider/altai-slide-tablet@2x.jpg" 2x);
   }
 
   @media (min-width: $desktop-width) {
-    --hero-slide-background: image-set("../../img/hero-slider/altai-slide-desktop@1x.webp" 1x, "../../img/hero-slider/altai-slide-desktop@2x.webp" 2x, "../../img/hero-slider/altai-slide-desktop@1x.jpg" 1x, "../../img/hero-slider/altai-slide-desktop@2x.jpg" 2x);
+    --hero-slide-background: image-set("../img/hero-slider/altai-slide-desktop@1x.webp" 1x, "../img/hero-slider/altai-slide-desktop@2x.webp" 2x, "../img/hero-slider/altai-slide-desktop@1x.jpg" 1x, "../img/hero-slider/altai-slide-desktop@2x.jpg" 2x);
   }
 }
 

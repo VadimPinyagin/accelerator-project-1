@@ -3,17 +3,17 @@
   flex-direction: column;
   padding-block-start: 40px;
   padding-block-end: 25px;
-  --about--background: image-set("../../img/about/about-background-mobile@1x.webp" 1x, "../../img/about/about-background-mobile@2x.webp" 2x, "../../img/about/about-background-mobile@1x.png" 1x, "../../img/about/about-background-mobile@1x.png" 2x);
+  --about--background: image-set("../img/about/about-background-mobile@1x.webp" 1x, "../img/about/about-background-mobile@2x.webp" 2x, "../img/about/about-background-mobile@1x.png" 1x, "../img/about/about-background-mobile@1x.png" 2x);
 
    @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: center;
-    --about--background: image-set("../../img/about/about-background-tablet@1x.webp" 1x, "../../img/about/about-background-tablet@2x.webp" 2x, "../../img/about/about-background-tablet@1x.png" 1x, "../../img/about/about-background-tablet@1x.png" 2x);
+    --about--background: image-set("../img/about/about-background-tablet@1x.webp" 1x, "../img/about/about-background-tablet@2x.webp" 2x, "../img/about/about-background-tablet@1x.png" 1x, "../img/about/about-background-tablet@1x.png" 2x);
   }
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
-    --about--background: image-set("../../img/about/about-background-desktop@1x.webp" 1x, "../../img/about/about-background-desktop@2x.webp" 2x, "../../img/about/about-background-desktop@1x.png" 1x, "../../img/about/about-background-desktop@1x.png" 2x);
+    --about--background: image-set("../img/about/about-background-desktop@1x.webp" 1x, "../img/about/about-background-desktop@2x.webp" 2x, "../img/about/about-background-desktop@1x.png" 1x, "../img/about/about-background-desktop@1x.png" 2x);
   }
 }
 
