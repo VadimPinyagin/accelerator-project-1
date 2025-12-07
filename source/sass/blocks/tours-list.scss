@@ -2,4 +2,8 @@
   @include list-reset;
   color: var(--base-white, #ffffff);
   padding-block-end: 25px;
+
+  @media (min-width: $desktop-width) {
+    padding-block-end: 53px;
+  }
 }

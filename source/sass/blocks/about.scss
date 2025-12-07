@@ -28,7 +28,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    width: 450px;
+    width: 445px;
     height: 350px;
     margin-inline: 0;
     flex-shrink: 0;
@@ -58,7 +58,7 @@
 .about__body {
 
   @media (min-width: $tablet-width) {
-    width: 270px;
+    width: 320px;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,7 +70,7 @@
 .about__title{
   margin: 0;
   position: relative;
-  padding-block: 16px;
+  padding-block: 18px 43px;
 
   @media (min-width: $tablet-width) {
     font-weight: 800;
@@ -83,7 +83,6 @@
     font-size: 35px;
     margin-inline-end: 120px;
   }
-
 }
 
 .about__title::after {
@@ -127,6 +126,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+     padding-block-end: 72px;
   }
 }
 

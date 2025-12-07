@@ -8,11 +8,30 @@
   font-size: 22px;
   line-height: 22px;
   padding-block: 25px 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    line-height: 25px;
+    padding-block-start: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    padding-block-start: 63px;
+  }
 }
 
 .instructors__list {
   @include list-reset;
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    padding-block-start: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-block-start: 0;
+  }
 }
 
 .instructors__card {

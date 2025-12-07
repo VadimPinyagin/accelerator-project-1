@@ -16,4 +16,8 @@ $desktop-width: 1440px;
   --swiper-pagination-top: auto;
   --swiper-pagination-bullet-inactive-opacity: 1;
   --action-points-gap: 25px;
+
+  @media (min-width: $desktop-width) {
+     --swiper-pagination-bottom: 92px;
+  }
 }

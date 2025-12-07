@@ -1,10 +1,54 @@
+.coaching {
+  padding-block-end: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-block: 43px 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-block-start: 111px;
+  }
+}
+
 .coaching__title {
+  position: relative;
   margin: 0;
   font-weight: 800;
   font-size: 22px;
   line-height: 22px;
   padding-block: 25px;
-  padding-block-end: 33px
+  padding-block-end: 33px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    padding-block-end: 36px;
+  }
+}
+
+.coaching__title::after {
+  content: attr(data-duplicate);
+  position: absolute;
+  left: 0;
+  bottom: 46px;
+  font-size: 26px;
+  line-height: 26px;
+  opacity: 0.03;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 40px;
+    bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 55px;
+    line-height: 55px;
+  }
 }
 
 .coaching__subtitle {
@@ -40,10 +84,10 @@
     display: grid;
     grid-template-columns: repeat(2, auto);
     row-gap: 104px;
-    column-gap: 198px;
+    column-gap: 178px;
     margin-inline-start: 0;
     padding-inline: 0;
-    padding-block-start: 104px;
+    padding-block-start: 100px;
   }
 
   @media (min-width: $desktop-width) {
@@ -77,29 +121,87 @@
   }
 }
 
+.coaching__item::before {
+ content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-image: var(--couching-icon);
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+
+  @media (min-width: $desktop-width) {
+    left: 10px;
+  }
+}
+
+.coaching__action-points:has(.coaching__item--mountains) {
+  --couching-icon: url("/__spritemap#sprite-mountains-view");
+
+  @media (min-width: $tablet-width) {
+    grid-row: 1/2;
+    grid-column: 2;
+  }
+}
+
+.coaching__item--map {
+ --couching-icon: url("/__spritemap#sprite-pin-map-view");
+}
+
+.coaching__item--boots {
+  --couching-icon: url("/__spritemap#sprite-boots-view");
+}
+
+.coaching__item--forest {
+  --couching-icon: url("/__spritemap#sprite-forest-view");
+}
+
+.coaching__item--mountains {
+  --couching-icon: url("/__spritemap#sprite-mountains-view");
+}
+
+.coaching__item br{
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
+
 .coaching__text-promo {
   margin: 0;
   padding-block-end: 4px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 820px;
+  }
 }
 
 .coaching__action-points {
   display: flex;
   position: relative;
+}
 
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background-color: var(--dark-blue, #0266c1);
-    left: -30px;
-    top: 11px;
+.coaching__action-points::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--dark-blue, #0266c1);
+  left: -30px;
+  top: 11px;
 
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
@@ -119,64 +221,3 @@
   }
 }
 
-.coaching__item--map::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 25px;
-  height: 25px;
-  background-image: url("/__spritemap#sprite-pin-map-view");
-  background-repeat: no-repeat;
-  background-size: 25px 25px;
-}
-
-.coaching__item--boots::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 25px;
-  height: 25px;
-  background-image: url("/__spritemap#sprite-boots-view");
-  background-repeat: no-repeat;
-  background-size: 25px 25px;
-}
-
-.coaching__item--forest::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 25px;
-  height: 25px;
-  background-image: url("/__spritemap#sprite-forest-view");
-  background-repeat: no-repeat;
-  background-size: 25px 25px;
-}
-
-.coaching__item--mountains::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 25px;
-  height: 25px;
-  background-image: url("/__spritemap#sprite-mountains-view");
-  background-repeat: no-repeat;
-  background-size: 25px 25px;
-}
-
-.coaching__item::before {
-  @media (min-width: $desktop-width) {
-    left: 10px;
-  }
-}
-
-.coaching__item br{
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: inline;
-  }
-}
