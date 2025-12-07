@@ -117,13 +117,6 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
-
-  @media (min-width: $desktop-width) {
-    display: block;
-    height: 2px;
-    width: calc(100% + var(--action-points-gap));
-    top: 10px;
-  }
 }
 
 .coaching__item--map::before {

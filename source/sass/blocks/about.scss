@@ -2,9 +2,8 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  max-width: 1660px;
-  // padding-block-start: 40px;
   padding-block-end: 25px;
+  max-width: 1660px;
   --about--background: image-set("../img/about/about-background-mobile@1x.webp" 1x, "../img/about/about-background-mobile@2x.webp" 2x, "../img/about/about-background-mobile@1x.png" 1x, "../img/about/about-background-mobile@1x.png" 2x);
 
    @media (min-width: $tablet-width) {

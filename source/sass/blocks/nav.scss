@@ -109,7 +109,8 @@
 .nav--menu-is-close .nav__main-menu {
   @media (min-width: $desktop-width) {
     display: flex;
-    column-gap: 26px;
+    flex-wrap: wrap;
+    gap: 26px;
     margin-inline-start: 34px;
   }
 }
@@ -148,6 +149,7 @@
   position: absolute;
   z-index: 2;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
   top: 100px;
@@ -168,6 +170,7 @@
   display: flex;
   row-gap: 16px;
   flex-direction: column;
+  flex-wrap: wrap;
   padding-block-start: 10px;
   padding-block-end: 47px;
   width: 290px;
