@@ -1,5 +1,6 @@
 .about {
   display: flex;
+  position: relative;
   flex-direction: column;
   padding-block-start: 40px;
   padding-block-end: 25px;
@@ -7,12 +8,12 @@
 
    @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: center;
+    justify-content: end;
+    align-items: center;
     --about--background: image-set("../img/about/about-background-tablet@1x.webp" 1x, "../img/about/about-background-tablet@2x.webp" 2x, "../img/about/about-background-tablet@1x.png" 1x, "../img/about/about-background-tablet@1x.png" 2x);
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: space-between;
     --about--background: image-set("../img/about/about-background-desktop@1x.webp" 1x, "../img/about/about-background-desktop@2x.webp" 2x, "../img/about/about-background-desktop@1x.png" 1x, "../img/about/about-background-desktop@1x.png" 2x);
   }
 }
@@ -26,10 +27,12 @@
   background:var(--about--background) no-repeat center/cover;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
     width: 450px;
     height: 350px;
     margin-inline: 0;
     flex-shrink: 0;
+    left: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,7 +46,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
-    width: 270px;
+    justify-content: flex-end;
     margin-inline: 0;
   }
 
@@ -54,7 +57,12 @@
 
 .about__body {
 
+  @media (min-width: $tablet-width) {
+    width: 270px;
+  }
+
   @media (min-width: $desktop-width) {
+    width: auto;
     margin-inline-end: 120px;
   }
 }
