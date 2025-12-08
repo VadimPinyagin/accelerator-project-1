@@ -6,7 +6,6 @@
 
 .hero__slides-list {
   @include list-reset;
-
 }
 
 .hero__slide {
@@ -31,7 +30,7 @@
   }
 }
 
-.hero__slide--сaucasus {
+.hero__slide--caucasus {
   --hero-slide-background: image-set("../img/hero-slider/сaucasus-slide-mobile@1x.webp" 1x, "../img/hero-slider/сaucasus-slide-mobile@2x.webp" 2x, "../img/hero-slider/сaucasus-slide-mobile@1x.jpg" 1x, "../img/hero-slider/сaucasus-slide-mobile@2x.jpg" 2x);
 
   @media (min-width: $tablet-width) {
@@ -47,16 +46,10 @@
   flex-direction: column;
   justify-content: center;
 
-  &::after {
-    content: "";
-    display: none;
-  }
-
   --hero-slide-background: image-set("../img/hero-slider/kamchatka-slide-mobile@1x.webp" 1x, "../img/hero-slider/kamchatka-slide-mobile@2x.webp" 2x, "../img/hero-slider/kamchatka-slide-mobile@1x.jpg" 1x, "../img/hero-slider/kamchatka-slide-mobile@2x.jpg" 2x);
 
   @media (min-width: $tablet-width) {
     --hero-slide-background: image-set("../img/hero-slider/kamchatka-slide-tablet@1x.webp" 1x, "../img/hero-slider/kamchatka-slide-tablet@2x.webp" 2x, "../img/hero-slider/kamchatka-slide-tablet@1x.jpg" 1x, "../img/hero-slider/kamchatka-slide-tablet@2x.jpg" 2x);
-
     --additionalcontent: image-set("../img/hero-slider/photo-cards-tablet@1x.webp" 1x, "../img/hero-slider/photo-cards-tablet@2x.webp" 2x, "../img/hero-slider/photo-cards-tablet@1x.png" 1x, "../img/hero-slider/photo-cards-tablet@2x.png" 2x);
   }
 
@@ -66,6 +59,9 @@
 }
 
 .hero__slide--kamchatka::after {
+  content: "";
+  display: none;
+
   @media (min-width: $tablet-width) {
     display: block;
     width: 443px;

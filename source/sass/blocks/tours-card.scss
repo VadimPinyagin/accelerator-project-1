@@ -1,5 +1,6 @@
 .tours-card__link {
   @include link-reset;
+
   display: grid;
   align-items: end;
 }
@@ -41,13 +42,13 @@
 
   &::after {
     content: "";
-  background-color: var(--base-white, #ffffff);
-  width: 80px;
-  height: 1px;
-  display: block;
-  position: absolute;
-  bottom: 13px;
-  opacity: 0.2;
+    background-color: var(--base-white, #ffffff);
+    width: 80px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    bottom: 13px;
+    opacity: 0.2;
   }
 }
 
@@ -75,7 +76,7 @@
   margin-block: 0;
   margin-inline-end: 5px;
   padding-block: 8px;
-  padding-inline:16px 13px;
+  padding-inline: 16px 13px;
   background-color: var(--dark-blue, #0266c1);
 
   &::before {
@@ -85,7 +86,7 @@
     height: 12px;
     mask-image: url("/__spritemap#sprite-pin-view");
     mask-repeat: no-repeat;
-    background-color: var(--base-white, #ffffff );
+    background-color: var(--base-white, #ffffff);
   }
 }
 
@@ -117,7 +118,7 @@
     height: 20px;
     mask-image: url("/__spritemap#sprite-sun-view");
     mask-repeat: no-repeat;
-    background-color: var(--base-white, #ffffff );
+    background-color: var(--base-white, #ffffff);
     margin-inline-end: 12px;
   }
 }
@@ -129,7 +130,7 @@
   height: 16px;
   mask-image: url("/__spritemap#sprite-moon-view");
   mask-repeat: no-repeat;
-  background-color: var(--base-white, #ffffff );
+  background-color: var(--base-white, #ffffff);
   margin-inline-end: 12px;
 }
 

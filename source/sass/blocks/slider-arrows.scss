@@ -17,13 +17,9 @@
     background-color: var(--dark-blue, #0266c1);
     color: var(--dark-blue, #0266c1);
   }
-
-  @media (min-width: $desktop-width) {
-    //
-  }
 }
 
-.slider-arrows:disabled{
+.slider-arrows:disabled {
   background-color: var(--disabled, #999999);
   color: var(--disabled, #999999);
 }
